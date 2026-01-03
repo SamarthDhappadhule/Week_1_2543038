@@ -14,7 +14,7 @@ public class Calculator extends Frame implements ActionListener {
         setTitle("Calculator");
         setSize(300, 400);
         setLayout(null);
-
+         setVisible(true);
       
         display = new TextField();
         display.setBounds(30, 50, 220, 40);
@@ -62,14 +62,6 @@ public class Calculator extends Frame implements ActionListener {
             add(b);
         }
 
-       
-        addWindowListener(new WindowAdapter() {
-            public void windowClosing(WindowEvent e) {
-                dispose();
-            }
-        });
-
-        setVisible(true);
     }
 
     public void actionPerformed(ActionEvent e) {
@@ -118,3 +110,4 @@ public class Calculator extends Frame implements ActionListener {
         new Calculator();
     }
 }
+
